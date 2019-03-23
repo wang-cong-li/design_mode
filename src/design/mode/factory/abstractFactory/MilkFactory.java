@@ -9,13 +9,11 @@ import design.mode.factory.YiLiMilk;
 public class MilkFactory extends AbstractMilkFactory {
     @Override
     public Milk getTeLunSuMilk() {
-//         return new TeLunSuMilk();
         return new TeLunSuFactory().getMilk();
     }
 
     @Override
     public Milk getYiLiMilk() {
-//        return new YiLiMilk();
         return new YiLiFactory().getMilk();
     }
 }
